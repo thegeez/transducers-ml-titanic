@@ -421,11 +421,11 @@
 ;; Note PassengerId is not used, it is not a feature
 (def clj-ml-features
   [{:Sex [:male :female]}
-   {:Age [:age-0-16
-          :age-16-32
-          :age-32-48
-          :age-48-64
-          :age-64-80]}
+   {:AgeBand [:age-0-16
+              :age-16-32
+              :age-32-48
+              :age-48-64
+              :age-64-80]}
    {:Pclass [:pc-one :pc-two :pc-three]}
    {:Embarked [:S :C :Q]}
    {:IsAlone [:alone :not-alone]}
@@ -450,7 +450,7 @@
 (comment
   (cm-data/attributes ds)
   ;; (#object[weka.core.Attribute 0x10418019 "@attribute Sex {male,female}"]
-  ;;  #object[weka.core.Attribute 0x76851d43 "@attribute Age {age-0-16,age-16-32,age-32-48,age-48-64,age-64-80}"]
+  ;;  #object[weka.core.Attribute 0x76851d43 "@attribute AgeBand {age-0-16,age-16-32,age-32-48,age-48-64,age-64-80}"]
   ;;  #object[weka.core.Attribute 0x42f64cc9 "@attribute Pclass {pc-one,pc-two,pc-three}"]
   ;;  #object[weka.core.Attribute 0x1fe50f48 "@attribute Embarked {S,C,Q}"]
   ;;  #object[weka.core.Attribute 0x3b815e5 "@attribute IsAlone {not-alone,alone}"]
